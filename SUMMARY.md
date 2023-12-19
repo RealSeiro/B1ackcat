@@ -21,7 +21,9 @@
   * [Bloodhound.py](windows/active-directory/bloodhound.py/README.md)
     * [예시](windows/active-directory/bloodhound.py/undefined.md)
   * [azuread\_decrypt\_msol](windows/active-directory/azuread\_decrypt\_msol.md)
-* [다양한 파일 접근](windows/undefined.md)
+* [리눅스 권한 상승](windows/undefined/README.md)
+  * [리눅스 자격증명 훔치기](windows/undefined/undefined.md)
+* [다양한 파일 접근](windows/undefined-1.md)
 * [Cmdkey 저장된 자격증명](windows/cmdkey.md)
 * [PS 명령어 모음](windows/ps.md)
 
