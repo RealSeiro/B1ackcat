@@ -5,7 +5,8 @@
 ## 🎆 네트워크 서비스 펜테스팅
 
 * [열거 전략](undefined/undefined.md)
-* [139,445 - Pentesting SMB](undefined/139-445-pentesting-smb.md)
+* [139,445 - Pentesting SMB](undefined/139-445-pentesting-smb/README.md)
+  * [RPC](undefined/139-445-pentesting-smb/rpc.md)
 * [21 - FTP](undefined/21-ftp.md)
 * [23 - Telnet](undefined/23-telnet.md)
 * [389,636,2368,3269 - LDAP](undefined/389-636-2368-3269-ldap.md)

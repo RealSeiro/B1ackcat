@@ -1,4 +1,4 @@
-# BlackBook
+# 🏴 BlackBook
 
 <figure><img src=".gitbook/assets/123123123123.png" alt=""><figcaption></figcaption></figure>
 
