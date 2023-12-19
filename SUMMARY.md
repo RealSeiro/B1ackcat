@@ -20,9 +20,10 @@
   * [커버로스팅](windows/active-directory/undefined.md)
   * [Bloodhound.py](windows/active-directory/bloodhound.py/README.md)
     * [예시](windows/active-directory/bloodhound.py/undefined.md)
-  * [Page](windows/active-directory/page.md)
+  * [azuread\_decrypt\_msol](windows/active-directory/azuread\_decrypt\_msol.md)
 * [다양한 파일 접근](windows/undefined.md)
 * [Cmdkey 저장된 자격증명](windows/cmdkey.md)
+* [PS 명령어 모음](windows/ps.md)
 
 ## 🕸 웹 펜테스팅&#x20;
 
