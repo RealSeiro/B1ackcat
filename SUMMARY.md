@@ -10,6 +10,7 @@
 * [21 - FTP](undefined/21-ftp.md)
 * [23 - Telnet](undefined/23-telnet.md)
 * [53 - DNS](undefined/53-dns.md)
+* [80 - http](undefined/80-http.md)
 * [88 - Kerberos](undefined/88-kerberos.md)
 * [389,636,2368,3269 - LDAP](undefined/389-636-2368-3269-ldap.md)
 * [2049 - NSF](undefined/2049-nsf.md)
@@ -36,4 +37,5 @@
 
 ## 🕸 웹 펜테스팅&#x20;
 
+* [SQL 인젝션](undefined-1/sql.md)
 * [리버스 쉘](undefined-1/undefined.md)
