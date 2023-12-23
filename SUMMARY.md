@@ -8,13 +8,17 @@
 * [139,445 - Pentesting SMB](undefined/139-445-pentesting-smb/README.md)
   * [RPC](undefined/139-445-pentesting-smb/rpc.md)
 * [21 - FTP](undefined/21-ftp.md)
+* [22 - SSH](undefined/22-ssh.md)
 * [23 - Telnet](undefined/23-telnet.md)
+* [25,465,587 - SMTP/s](undefined/25-465-587-smtp-s.md)
 * [53 - DNS](undefined/53-dns.md)
 * [80 - http](undefined/80-http.md)
 * [88 - Kerberos](undefined/88-kerberos.md)
+* [110,995 - POP](undefined/110-995-pop.md)
 * [389,636,2368,3269 - LDAP](undefined/389-636-2368-3269-ldap.md)
 * [2049 - NSF](undefined/2049-nsf.md)
 * [3306 - Mysql](undefined/3306-mysql.md)
+* [4555 - James](undefined/4555-james.md)
 * [5985, 5986 - Winrm](undefined/5985-5986-winrm.md)
 
 ## 🖥 Windows
@@ -34,6 +38,10 @@
 * [다양한 파일 접근](windows/undefined-2.md)
 * [Cmdkey 저장된 자격증명](windows/cmdkey.md)
 * [PS 명령어 모음](windows/ps.md)
+
+## 🔗 Linux
+
+* [리눅스 권한 상승](linux/undefined.md)
 
 ## 🕸 웹 펜테스팅&#x20;
 
