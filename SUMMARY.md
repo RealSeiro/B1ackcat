@@ -42,6 +42,7 @@
 * [리눅스 권한 상승](linux/undefined.md)
 * [리눅스 권한 상승](linux/undefined-1/README.md)
   * [리눅스 자격증명 훔치기](linux/undefined-1/undefined.md)
+  * [Systemctl](linux/undefined-1/systemctl.md)
 
 ## 🕸 웹 펜테스팅&#x20;
 
