@@ -16,3 +16,9 @@ readpst Access\ Control.pst #pst파일을 mbox 형식으로 변환
 
 mutt -Rf Access\ Control.mbox #mbox파일을 읽기
 ```
+
+### 숨겨진 파일 살펴보기&#x20;
+
+```powershell
+*Evil-WinRM* PS C:\> gci -recurse -force -file PSTranscripts
+```
