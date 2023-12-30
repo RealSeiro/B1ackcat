@@ -39,27 +39,40 @@ optional arguments:
 * 보시다시피 이 도구는 `-c` 또는 `--collectionmethod` 플래그를 사용하여 다양한 수집 방법을 허용
   * 사용자 세션, 사용자 및 그룹, 개체 속성, ACLS와 같은 특정 데이터를 검색하거나 `ALL`선택하여 가능한 한 많은 데이터를 수집할 수 있습니다. 이 방법으로 실행해 보겠습니다.
 
+참고: Kerberos 인증을 사용하려면 호스트가 도메인 FQDN을 확인해야 합니다. 즉, 호스트가 Kerberos가 작동하려면 DNS 이름 KDC를 확인해야 하므로 `--nameserver` 옵션으로는 Kerberos 인증에 충분하지 않습니다. Kerberos 인증을 사용하려면 DNS 서버를 대상 컴퓨터로 설정하거나 호스트 파일에서 DNS 항목을 구성해야 합니다.
+
+
+
+**etc/hosts 파일 설정하기**
+
+```bash
+realblackcat@htb[/htb]$ echo -e "\n10.129.204.207 dc01.inlanefreight.htb dc01 inlanefreight inlanefreight.htb" | sudo tee -a /etc/hosts
+
+10.129.204.207 dc01.inlanefreight.htb dc01 inlanefreight inlanefreight.htb
+```
+
 **BloodHound.py 실행**
 
 &#x20; BloodHound.py 실행
 
 {% code lineNumbers="true" %}
 ```bash
-realblackcat@htb[/htb]$ sudo bloodhound-python -u 'forend' -p 'Klmcargo2' -ns 172.16.5.5 -d inlanefreight.local -c all 
-
-INFO: Found AD domain: inlanefreight.local
-INFO: Connecting to LDAP server: ACADEMY-EA-DC01.INLANEFREIGHT.LOCAL
+realblackcat@htb[/htb]$ bloodhound-python -d inlanefreight.htb -c DCOnly -u htb-student -p HTBRocks! -ns 10.129.204.207 --kerberos
+INFO: Found AD domain: inlanefreight.htb
+INFO: Getting TGT for user
+INFO: Connecting to LDAP server: dc01.inlanefreight.htb
 INFO: Found 1 domains
-INFO: Found 2 domains in the forest
-INFO: Found 564 computers
-INFO: Connecting to LDAP server: ACADEMY-EA-DC01.INLANEFREIGHT.LOCAL
-INFO: Found 2951 users
-INFO: Connecting to GC LDAP server: ACADEMY-EA-DC01.INLANEFREIGHT.LOCAL
-INFO: Found 183 groups
-INFO: Found 2 trusts
-INFO: Starting computer enumeration with 10 workers
+INFO: Found 1 domains in the forest
+INFO: Connecting to LDAP server: dc01.inlanefreight.htb
+INFO: Found 6 users
+INFO: Found 52 groups
+INFO: Found 2 gpos
+INFO: Found 1 ous
+INFO: Found 19 containers
+INFO: Found 3 computers
+INFO: Found 0 trusts
+INFO: Done in 00M 11S
 
-<SNIP>
 ```
 {% endcode %}
 
@@ -98,4 +111,8 @@ realblackcat@htb[/htb]$ ls
 위의 맵을 생성하기 위해 선택한 쿼리는 `도메인 관리자로 가는 최단 경로 찾기였습니다`. 이 쿼리는 사용자/그룹/호스트/ACL/GPO 등을 통해 찾은 논리적 경로, 즉 도메인 관리자 권한 또는 이와 동등한 권한으로 에스컬레이션할 수 있는 관계를 제공합니다. 이는 네트워크를 통한 측면 이동을 위한 다음 단계를 계획할 때 매우 유용합니다. 데이터를 업로드한 후 `데이터베이스 정보` 탭에서 `도메인 사용자와` 같은 노드를 검색하고, `노드 정보` 탭 아래의 모든 옵션을 스크롤하고, `분석` 탭 아래에 있는 미리 작성된 쿼리 중 강력하고 도메인 탈취를 위한 다양한 방법을 빠르게 찾을 수 있는 쿼리를 확인해 보세요. 마지막으로, 위에 링크된 Cypher 치트시트에서 흥미로운 쿼리를 몇 가지 선택하여 하단의 `원시 쿼리` 상자에 붙여넣고 Enter 키를 눌러 사용자 지정 Cypher 쿼리를 실험해 보세요. 화면 오른쪽에 있는 톱니바퀴 아이콘을 클릭하고 노드와 에지 표시 방식, 쿼리 디버그 모드 활성화, 다크 모드 활성화 등을 조정하여 `설정` 메뉴를 사용해 볼 수도 있습니다. 이 모듈의 나머지 부분에서는 다양한 방법으로 BloodHound를 사용할 예정이지만, BloodHound 도구에 대한 자세한 내용은 [Active Directory BloodHound](https://academy.hackthebox.com/course/preview/active-directory-bloodhound) 모듈을 확인하세요.
 
 다음 섹션에서는 도메인에 가입된 Windows 호스트에서 SharpHound 수집기를 실행하는 방법을 다루고 BloodHound GUI에서 데이터로 작업하는 몇 가지 예제를 살펴보겠습니다.
+
+
+
+
 
