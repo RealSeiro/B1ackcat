@@ -36,7 +36,7 @@
   * [AlwaysInstallElevated](windows/undefined/alwaysinstallelevated.md)
 * [다양한 파일 접근](windows/undefined-1.md)
 * [Cmdkey 저장된 자격증명](windows/cmdkey.md)
-* [PS 명령어 모음](windows/ps.md)
+* [윈도우 열거](windows/undefined-2.md)
 
 ## 🔗 Linux
 
