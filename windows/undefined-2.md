@@ -10,3 +10,8 @@ net view \\s021m005 /all #해당 유저의 모든 파일 보여주기 (숨겨진
 crackmapexec smb -u s.smith -p sT333ve2 --shares 10.10.10.182
 #공유가능한 폴더 보는 명령어, 자주 사용하기
 ```
+
+```powershell
+//PowerShell
+PS Z:\> [System.Net.WebProxy]::GetDefaultProxy() #시스템 프록시 확인
+```
