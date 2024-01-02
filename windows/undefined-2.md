@@ -2,6 +2,8 @@
 
 ```powershell
 net user mhope #mhope 유저에 대한 정보 확인 
+net user mhope /domain #해당 도메인의 mhope 유저에 대한 정보 확인
+net view \\s021m005 /all #해당 유저의 모든 파일 보여주기 (숨겨진 공유파일을 확인할때 사용)
 ```
 
 ```bash
