@@ -37,6 +37,7 @@
 * [다양한 파일 접근](windows/undefined-1.md)
 * [Cmdkey 저장된 자격증명](windows/cmdkey.md)
 * [윈도우 열거](windows/undefined-2.md)
+* [페이로드 암호화하기](windows/undefined-3.md)
 
 ## 🔗 Linux
 
@@ -50,3 +51,7 @@
 * [SQL 인젝션](undefined-1/sql.md)
 * [리버스 쉘](undefined-1/undefined.md)
 * [암호화된 파일 해독하기](undefined-1/undefined-1.md)
+
+## 💣 C2
+
+* [Sliver](c2/sliver.md)
