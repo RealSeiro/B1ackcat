@@ -46,9 +46,10 @@ access\administrator
 
 ## 쉘 업그레이드
 
-1. `python -c 'import pty;pty.spawn("bash")'`
+
+
+1. python3 -c 'import pty;pty.spawn("/bin/bash")'
 2. \[ctrl-Z]를 눌러 백그라운드 셸로 이동합니다.
-3. `stty raw -echo`
-4. `fg`
-5. `reset`
-6. 단말기 유형을 묻는 메시지가 표시되면 `screen` 입력합니다.
+3. `stty raw -echo; fg`
+4. export TERM=xterm (or)
+5. export SHELL=bash
