@@ -34,6 +34,7 @@
 * [윈도우 권한 상승](windows/undefined/README.md)
   * [자동 실행을 통한 권한 상승](windows/undefined/undefined.md)
   * [AlwaysInstallElevated](windows/undefined/alwaysinstallelevated.md)
+  * [DNS Admin](windows/undefined/dns-admin.md)
 * [다양한 파일 접근](windows/undefined-1.md)
 * [Cmdkey 저장된 자격증명](windows/cmdkey.md)
 * [윈도우 열거](windows/undefined-2.md)
