@@ -24,3 +24,10 @@ mutt -Rf Access\ Control.mbox #mbox파일을 읽기
 
 gc PowerShell_transcript.RESOLUTE.OJuoBGhU.20191203063201.txt #숨겨진 파일 강제 읽기 
 ```
+
+### DB 보는법
+
+<pre class="language-bash"><code class="lang-bash">root@kali: file Audit.db 
+Audit.db: SQLite 3.x database, last written using SQLite version 3027002
+<strong>root@kali: sqlite3 Audit.db
+</strong></code></pre>
