@@ -29,6 +29,7 @@
 
 ## 🖥️ Windows
 
+* [Hashcat](windows/hashcat.md)
 * [GPP 비밀번호](windows/gpp.md)
 * [Active Directory 방법론](windows/active-directory/README.md)
   * [커버로스팅](windows/active-directory/undefined.md)
