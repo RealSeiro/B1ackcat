@@ -70,4 +70,5 @@
 
 ## 🟩 HTB
 
-* [Page 1](htb/page-1.md)
+* [Emdee Five](htb/emdee-five.md)
+* [Heist(Eazy, Windows)](htb/heist-eazy-windows.md)
