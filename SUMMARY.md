@@ -66,3 +66,7 @@
 ## 💣 C2
 
 * [Sliver](c2/sliver.md)
+
+## 🟩 HTB
+
+* [Page 1](htb/page-1.md)
