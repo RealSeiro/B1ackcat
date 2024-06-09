@@ -62,7 +62,7 @@
 * [http 메소드](undefined-1/http.md)
 * [SQL 인젝션](undefined-1/sql.md)
 * [리버스 쉘](undefined-1/undefined.md)
-* [암호화된 파일 해독하기](undefined-1/undefined-1.md)
+* [인코딩/디코딩](undefined-1/undefined-1.md)
 
 ## 💣 C2
 
