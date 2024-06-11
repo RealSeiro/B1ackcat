@@ -37,5 +37,8 @@ Nmap : 80, 135, 445, 5985
         1. Restricted access for guest user.
   * vmware 툴 존재
   * Hazard, Public, Administrator 폴더 존재 but 액세스 권한 없음
+  * inetpub 폴더 발견 but 권한 없음
+  * firefox가 현재 실행중임을 발견 (Get-Process : 실행중인 프로그램 확인)
+  * sysinternalsuit/procdump4.exe를 사용해서 파이어폭스 덤프 (winrm에 sysinternalsuit 업로드 후 "./procdump64.exe -ma 3652)
 * 쓸모있는 경로 : /usr/share/doc/python3-impoacket/examples
 *

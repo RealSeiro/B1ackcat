@@ -45,6 +45,7 @@
   * [DNS Admin](windows/undefined/dns-admin.md)
   * [AD Recycle Bin](windows/undefined/ad-recycle-bin.md)
   * [lsass Dump](windows/undefined/lsass-dump.md)
+  * [FireFox](windows/undefined/firefox.md)
 * [다양한 파일 접근](windows/undefined-1.md)
 * [일반 애플리케이션 공격](windows/undefined-2.md)
 * [Cmdkey 저장된 자격증명](windows/cmdkey.md)
@@ -73,3 +74,4 @@
 
 * [Emdee Five](htb/emdee-five.md)
 * [Heist(Eazy, Windows)](htb/heist-eazy-windows.md)
+* [OPENADMIN](htb/openadmin.md)
