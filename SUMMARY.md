@@ -32,6 +32,7 @@
 * [Hashcat](windows/hashcat.md)
 * [GPP 비밀번호](windows/gpp.md)
 * [Active Directory 방법론](windows/active-directory/README.md)
+  * [Cheat seat](windows/active-directory/cheat-seat.md)
   * [커버로스팅](windows/active-directory/undefined.md)
   * [Bloodhound.py](windows/active-directory/bloodhound.py/README.md)
     * [예시](windows/active-directory/bloodhound.py/undefined.md)
