@@ -26,6 +26,9 @@
 * [4555 - James](undefined/4555-james.md)
 * [5985, 5986 - Winrm](undefined/5985-5986-winrm.md)
 * [Oracle TNS](undefined/oracle-tns.md)
+* [FootPrinting](undefined/footprinting.md)
+* [정보수집](undefined/undefined-1.md)
+* [Nmap 네트워크 열거](undefined/nmap.md)
 
 ## 🖥️ Windows
 
@@ -49,16 +52,19 @@
   * [FireFox](windows/undefined/firefox.md)
 * [다양한 파일 접근](windows/undefined-1.md)
 * [일반 애플리케이션 공격](windows/undefined-2.md)
+* [공통 서비스 공격](windows/undefined-3.md)
+* [피벗 터널링 & 포트 포워딩](windows/and.md)
 * [Cmdkey 저장된 자격증명](windows/cmdkey.md)
-* [윈도우 열거](windows/undefined-3.md)
-* [페이로드 암호화하기](windows/undefined-4.md)
+* [윈도우 열거](windows/undefined-4.md)
+* [페이로드 암호화하기](windows/undefined-5.md)
 
 ## 🔗 Linux
 
-* [리눅스 권한 상승](linux/undefined.md)
-* [리눅스 권한 상승](linux/undefined-1/README.md)
-  * [리눅스 자격증명 훔치기](linux/undefined-1/undefined.md)
-  * [Systemctl](linux/undefined-1/systemctl.md)
+* [리눅스 권한 상승](linux/undefined/README.md)
+  * [리눅스 자격증명 훔치기](linux/undefined/undefined.md)
+  * [Systemctl](linux/undefined/systemctl.md)
+* [MSFconsole](linux/msfconsole.md)
+* [비밀번호 공격](linux/undefined-1.md)
 
 ## 🕸️ 웹 펜테스팅&#x20;
 
@@ -66,6 +72,17 @@
 * [SQL 인젝션](undefined-1/sql.md)
 * [리버스 쉘](undefined-1/undefined.md)
 * [인코딩/디코딩](undefined-1/undefined-1.md)
+* [파일 전송](undefined-1/undefined-2.md)
+* [웹 프록시](undefined-1/undefined-3.md)
+* [FFUF 웹 애플리케이션 공격](undefined-1/ffuf.md)
+* [로그인 무차별 대입](undefined-1/undefined-4.md)
+* [SQL 주입 기초](undefined-1/sql-1.md)
+* [SQLMAP 필수사항](undefined-1/sqlmap.md)
+* [XSS](undefined-1/xss.md)
+* [파일 포함 공격](undefined-1/undefined-5.md)
+* [파일 업로드 공격](undefined-1/undefined-6.md)
+* [웹 애플리케이션 공격](undefined-1/undefined-7.md)
+* [일반 애플리케이션 공격](undefined-1/undefined-8.md)
 
 ## 💣 C2
 
