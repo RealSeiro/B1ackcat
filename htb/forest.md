@@ -130,12 +130,22 @@ rpcclient $>
 Administrator
 Guest
 krbtgt
-
-
-
-
-
-
-
+DefaultAccount
+sebastien
+lucinda
+svc-alfresco
+andy
+mark
+santi
+zax
 
 </code></pre>
+
+
+
+Exploit
+
+```bash
+#도메인 유저만 가지고 있을 경우 ASREP Roasting 공격 가능
+
+```
