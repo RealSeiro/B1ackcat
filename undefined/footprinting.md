@@ -27,7 +27,7 @@
 | `openssl s_client -connect <FQDN/IP>:21 -starttls ftp`    | 암호화된 연결을 사용하여 대상의 FTP 서비스와 상호 작용합니다. |
 | `wget -m --no-passive ftp://anonymous:anonymous@<target>` | 대상 FTP 서버에서 사용 가능한 모든 파일을 다운로드합니다.   |
 
-**중소기업**
+smb
 
 
 
