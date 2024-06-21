@@ -1,30 +1,32 @@
 # 윈도우 권한 상승
 
-| `xfreerdp /v:<target ip> /u:htb-student`                                                              | 연구 대상에 대한 RDP               |
-| ----------------------------------------------------------------------------------------------------- | --------------------------- |
-| `ipconfig /all`                                                                                       | 인터페이스, IP 주소 및 DNS 정보 가져오기  |
-| `arp -a`                                                                                              | ARP 테이블 검토                  |
-| `route print`                                                                                         | 라우팅 테이블 검토                  |
-| `Get-MpComputerStatus`                                                                                | Windows Defender 상태 확인      |
-| `Get-AppLockerPolicy -Effective \| select -ExpandProperty RuleCollections`                            | AppLocker 규칙 나열             |
-| `Get-AppLockerPolicy -Local \| Test-AppLockerPolicy -path C:\Windows\System32\cmd.exe -User Everyone` | AppLocker 정책 테스트            |
-| `set`                                                                                                 | 모든 환경 변수 표시                 |
-| `systeminfo`                                                                                          | 자세한 시스템 구성 정보 보기            |
-| `wmic qfe`                                                                                            | 패치 및 업데이트 받기                |
-| `wmic product get name`                                                                               | 설치된 프로그램 받기                 |
-| `tasklist /svc`                                                                                       | 실행 중인 프로세스 표시               |
-| `query user`                                                                                          | 로그인한 사용자 가져오기               |
-| `echo %USERNAME%`                                                                                     | 현재 사용자 가져오기                 |
-| `whoami /priv`                                                                                        | 현재 사용자 권한 보기                |
-| `whoami /groups`                                                                                      | 현재 사용자 그룹 정보 보기             |
-| `net user`                                                                                            | 모든 시스템 사용자 가져오기             |
-| `net localgroup`                                                                                      | 모든 시스템 그룹 가져오기              |
-| `net localgroup administrators`                                                                       | 그룹에 대한 세부정보 보기              |
-| `net accounts`                                                                                        | 비밀번호 정책 가져오기                |
-| `netstat -ano`                                                                                        | 활성 네트워크 연결 표시               |
-| `pipelist.exe /accepteula`                                                                            | 명명된 파이프 나열                  |
-| `gci \\.\pipe\`                                                                                       | PowerShell을 사용하여 명명된 파이프 나열 |
-| `accesschk.exe /accepteula \\.\Pipe\lsass -v`                                                         | 명명된 파이프에 대한 권한 검토           |
+| `xfreerdp /v:<target ip> /u:htb-student`                                                                  | 연구 대상에 대한 RDP                     |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| `ipconfig /all`                                                                                           | 인터페이스, IP 주소 및 DNS 정보 가져오기        |
+| `arp -a`                                                                                                  | ARP 테이블 검토                        |
+| `route print`                                                                                             | 라우팅 테이블 검토                        |
+| `Get-MpComputerStatus`                                                                                    | Windows Defender 상태 확인            |
+| `Get-AppLockerPolicy -Effective \| select -ExpandProperty RuleCollections`                                | AppLocker 규칙 나열                   |
+| `Get-AppLockerPolicy -Local \| Test-AppLockerPolicy -path C:\Windows\System32\cmd.exe -User Everyone`     | AppLocker 정책 테스트                  |
+| `set`                                                                                                     | 모든 환경 변수 표시                       |
+| `systeminfo`                                                                                              | 자세한 시스템 구성 정보 보기                  |
+| `wmic qfe`                                                                                                | 패치 및 업데이트 받기                      |
+| `wmic product get name`                                                                                   | 설치된 프로그램 받기                       |
+| `tasklist /svc`                                                                                           | 실행 중인 프로세스 표시                     |
+| `query user`                                                                                              | 로그인한 사용자 가져오기                     |
+| `echo %USERNAME%`                                                                                         | 현재 사용자 가져오기                       |
+| `whoami /priv`                                                                                            | 현재 사용자 권한 보기                      |
+| `whoami /groups`                                                                                          | 현재 사용자 그룹 정보 보기                   |
+| `net user`                                                                                                | 모든 시스템 사용자 가져오기                   |
+| `net localgroup`                                                                                          | 모든 시스템 그룹 가져오기                    |
+| `net localgroup administrators`                                                                           | 그룹에 대한 세부정보 보기                    |
+| `net accounts`                                                                                            | 비밀번호 정책 가져오기                      |
+| `netstat -ano`                                                                                            | 활성 네트워크 연결 표시                     |
+| `pipelist.exe /accepteula`                                                                                | 명명된 파이프 나열                        |
+| `gci \\.\pipe\`                                                                                           | PowerShell을 사용하여 명명된 파이프 나열       |
+| `accesschk.exe /accepteula \\.\Pipe\lsass -v`                                                             | 명명된 파이프에 대한 권한 검토                 |
+| <p></p><pre><code>crackmapexec ldap 10.10.11.202 -u ryan.cooper -p NuclearMosquito3 -M adcs
+</code></pre> | adcs(Active Directory 인증서 서비스 확인) |
 
 ### 편리한 명령
 

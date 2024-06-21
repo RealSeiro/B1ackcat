@@ -41,6 +41,7 @@
     * [예시](windows/active-directory/bloodhound.py/undefined.md)
   * [azuread\_decrypt\_msol](windows/active-directory/azuread\_decrypt\_msol.md)
   * [Secretdump.py로 DCsync 수행하기](windows/active-directory/secretdump.py-dcsync.md)
+  * [AD CS](windows/active-directory/ad-cs.md)
   * [ASREPRoasting](windows/active-directory/asreproasting.md)
 * [윈도우 권한 상승](windows/undefined/README.md)
   * [inetpub](windows/undefined/inetpub.md)
