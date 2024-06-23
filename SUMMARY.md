@@ -4,8 +4,7 @@
 
 ## 🎆 네트워크 서비스 펜테스팅
 
-* [오우쉣 ㅋㅋ 도망가\~\~\~](undefined/undefined.md)
-* [열거 전략](undefined/undefined-1.md)
+* [열거 전략](undefined/undefined.md)
 * [21 - FTP](undefined/21-ftp.md)
 * [22 - SSH](undefined/22-ssh.md)
 * [23 - Telnet](undefined/23-telnet.md)
@@ -28,7 +27,7 @@
 * [5985, 5986 - Winrm](undefined/5985-5986-winrm.md)
 * [Oracle TNS](undefined/oracle-tns.md)
 * [FootPrinting](undefined/footprinting.md)
-* [정보수집](undefined/undefined-2.md)
+* [정보수집](undefined/undefined-1.md)
 * [Nmap 네트워크 열거](undefined/nmap.md)
 
 ## 🖥️ Windows
