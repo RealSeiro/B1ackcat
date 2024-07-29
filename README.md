@@ -32,7 +32,6 @@ B1ackBook은 오펜시브 시큐리티 및 전반적인 정보보안과 관련�
 업계에서 일하고 있는 현직 해커들로, 한국의 오펜시브 시큐리티 정보 공유에 기여하는 것을 지향합니다.
 
 * [김도현 (B1ack Cat)](https://app.gitbook.com/u/aPZSpGSF3pQm3jdCberJxKOUHxx2 "mention") - 대학생이며 레드팀이 되기위해 노력중입니다.
-  * [블로그](https://b1ackcat.com/)
 
 
 
